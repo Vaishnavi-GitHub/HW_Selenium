@@ -33,7 +33,7 @@ public class CreateAccount {
 		//- Click on the "Create Account" button.
 		driver.findElement(By.linkText("Create Account")).click();
 		//- Enter an account name. 
-		String ac_input="Angelone";
+		String ac_input="Angeldne";
 		driver.findElement(By.id("accountName")).sendKeys(ac_input);
 		//- Enter a description as "Selenium Automation Tester." 
 		driver.findElement(By.cssSelector("textArea[name=\"description\"]")).sendKeys("Selenium Automation Tester." );

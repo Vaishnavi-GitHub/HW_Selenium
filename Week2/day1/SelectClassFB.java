@@ -1,5 +1,6 @@
 package Week2.day1;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -15,7 +16,8 @@ public class SelectClassFB {
 		ChromeDriver driver= new ChromeDriver();
 		driver.get("https://en-gb.facebook.com/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String fn="Tello"; String ln="Ti"; String mailID=fn+ln+"@gmail.com";
 		//click on new account button
 		driver.findElement(By.cssSelector("[data-testid='open-registration-form-button']")).click();
